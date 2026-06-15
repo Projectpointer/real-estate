@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Luxury Flats in Gurgaon | Elite Residences — The Address of Excellence</title>
-  <!-- Google Fonts + Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <title>Sobha Crescent 63A | Luxury 3/4 BHK Apartments on Golf Course Ext Road</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -18,7 +17,7 @@
     body {
       font-family: 'Inter', sans-serif;
       background-color: #ffffff;
-      color: #1e293b;
+      color: #1e2a3e;
       line-height: 1.5;
       scroll-behavior: smooth;
     }
@@ -29,525 +28,568 @@
       padding: 0 24px;
     }
 
-    /* modern gradient accents */
-    :root {
-      --primary: #0a3e2f;
-      --primary-light: #1f6e54;
-      --gold: #c7a15e;
-      --cream: #fef8ed;
-      --gray-light: #f8fafc;
-      --shadow-sm: 0 20px 35px -12px rgba(0,0,0,0.08);
+    /* Utility */
+    .text-gold {
+      color: #c7a252;
     }
-
-    .btn-primary {
-      background: linear-gradient(105deg, #0a3e2f, #1f6e54);
-      color: white;
-      padding: 14px 32px;
-      border-radius: 50px;
+    .bg-gold {
+      background-color: #c7a252;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #c7a252;
+      color: #0a1c2f;
       font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.25s ease;
       border: none;
       cursor: pointer;
-      transition: 0.3s ease;
       font-size: 1rem;
-      display: inline-block;
-      text-decoration: none;
       text-align: center;
-      box-shadow: 0 8px 18px rgba(10,62,47,0.2);
     }
-
-    .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 18px 30px -8px rgba(10,62,47,0.4);
-      background: linear-gradient(105deg, #0b4a38, #258a6a);
-    }
-
-    .btn-outline-gold {
+    .btn-outline {
       background: transparent;
-      border: 2px solid var(--gold);
-      color: var(--gold);
-      padding: 10px 28px;
-      border-radius: 50px;
-      font-weight: 600;
-      transition: 0.2s;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
+      border: 2px solid #c7a252;
+      color: #c7a252;
     }
-
-    .btn-outline-gold:hover {
-      background: var(--gold);
-      color: #0a2a1f;
+    .btn-outline:hover {
+      background: #c7a252;
+      color: #0a1c2f;
     }
-
-    /* navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 0;
-      flex-wrap: wrap;
-      gap: 20px;
+    .btn:hover {
+      background-color: #b38f40;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
-
-    .logo {
-      font-size: 1.9rem;
-      font-weight: 800;
-      color: var(--primary);
-      letter-spacing: -0.5px;
+    section {
+      padding: 70px 0;
     }
-
-    .logo span {
-      font-weight: 400;
-      color: var(--gold);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 36px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #1e293b;
-      font-weight: 500;
-      transition: 0.2s;
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover, .nav-links a.active {
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    /* Hero section */
-    .hero {
-      background: linear-gradient(135deg, #f9f3e8 0%, #f0e9df 100%);
-      border-radius: 48px;
-      padding: 56px 48px;
-      margin: 20px 0 50px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 48px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .hero-text h1 {
-      font-size: 3.6rem;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 20px;
-      background: linear-gradient(130deg, #0a3e2f, #a57c3c);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-      color: #2d3e50;
-      margin-bottom: 32px;
-      max-width: 550px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: rgba(199,161,94,0.15);
-      padding: 6px 14px;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      color: #a57c3c;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    .hero-form {
-      flex: 0.8;
-      background: white;
-      padding: 36px 32px;
-      border-radius: 36px;
-      box-shadow: 0 30px 50px -20px rgba(0,0,0,0.2);
-    }
-
-    .hero-form h3 {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 15px 20px;
-      border: 1px solid #e2e8f0;
-      border-radius: 60px;
-      font-size: 1rem;
-      font-family: inherit;
-    }
-
-    .form-group input:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(15,59,44,0.15);
-    }
-
-    /* stats row */
-    .stats-row {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      background: white;
-      border-radius: 80px;
-      padding: 20px 30px;
-      margin: 40px 0 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.03);
-      border: 1px solid #eeece5;
-    }
-    .stat-item { text-align: center; flex:1; }
-    .stat-number { font-size: 1.8rem; font-weight: 800; color: var(--primary); }
-    .stat-label { font-size: 0.85rem; color: #5e6f8d; }
-
-    /* floorplans enhanced */
     .section-title {
-      font-size: 2.5rem;
-      font-weight: 800;
+      font-size: 2.2rem;
+      font-weight: 700;
       margin-bottom: 16px;
       text-align: center;
     }
     .section-sub {
       text-align: center;
-      color: #5b6e8c;
-      margin-bottom: 56px;
+      max-width: 700px;
+      margin: 0 auto 48px;
+      color: #4a5b6e;
+      font-size: 1.1rem;
     }
-    .floor-grid {
+    /* header / nav */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+      padding: 18px 0;
+    }
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: #c7a252;
+    }
+    .nav-links a {
+      margin-left: 32px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #1e2a3e;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      color: #c7a252;
+    }
+    /* Hero section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center 30%;
+      color: white;
+      padding: 100px 0;
+    }
+    .hero-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 32px;
-      justify-content: center;
-    }
-    .floor-card {
-      background: white;
-      border-radius: 32px;
-      overflow: hidden;
-      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
-      flex: 1 1 280px;
-      transition: all 0.3s;
-      border: 1px solid #efede7;
-    }
-    .floor-card:hover { transform: translateY(-10px); box-shadow: 0 30px 40px -12px rgba(0,0,0,0.15);}
-    .floor-img {
-      background: #e5e0d3;
-      height: 200px;
-      display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--primary);
+      justify-content: space-between;
+      gap: 40px;
     }
-    .floor-details { padding: 24px; }
-    .price { font-weight: 800; color: var(--gold); font-size: 1.4rem; margin-top: 12px;}
-
-    /* description with gallery vibes */
-    .description-section {
-      background: var(--cream);
-      padding: 70px 0;
-      border-radius: 48px;
-      margin: 50px 0;
+    .hero-content {
+      flex: 1.2;
     }
-    .amenities-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
-      gap: 24px;
-      margin-top: 40px;
+    .hero-badge {
+      background: rgba(199,162,82,0.2);
+      backdrop-filter: blur(4px);
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      border-left: 3px solid #c7a252;
     }
-    .amenity-card {
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .hero-desc {
+      font-size: 1.1rem;
+      margin: 20px 0;
+      opacity: 0.9;
+    }
+    .price-tag {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 16px 0;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      font-weight: 600;
+    }
+    .hero-form {
+      flex: 0.8;
       background: white;
-      padding: 20px;
+      padding: 32px 28px;
       border-radius: 28px;
+      color: #1e2a3e;
+      box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+    }
+    .hero-form h3 {
+      font-size: 1.7rem;
+      margin-bottom: 8px;
+    }
+    .hero-form p {
+      color: #5a6e7c;
+      margin-bottom: 24px;
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1px solid #e2e8f0;
+      border-radius: 48px;
+      font-size: 1rem;
+      transition: 0.2s;
+      outline: none;
+    }
+    .form-group input:focus {
+      border-color: #c7a252;
+      box-shadow: 0 0 0 3px rgba(199,162,82,0.2);
+    }
+    .submit-btn {
+      width: 100%;
+      background: #c7a252;
+      color: #0a1c2f;
+      font-weight: 700;
+      padding: 14px;
+      border-radius: 48px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .web3-note {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 14px;
+      color: #7c8b9c;
+    }
+    /* Highlights Grid */
+    .highlights {
+      background: #f9fafc;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .feature-card {
+      background: white;
+      border-radius: 24px;
+      padding: 28px 20px;
       text-align: center;
       box-shadow: 0 8px 20px rgba(0,0,0,0.02);
       transition: 0.2s;
+      border: 1px solid #edf2f7;
     }
-    .amenity-card i { font-size: 2.2rem; color: var(--gold); margin-bottom: 12px;}
-
-    /* video / location highlight */
-    .location-highlight {
-      background: linear-gradient(115deg, #0a2a1f, #133d2e);
-      color: white;
-      border-radius: 48px;
-      padding: 48px 40px;
-      margin: 50px 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
+    .feature-card i {
+      font-size: 2.4rem;
+      color: #c7a252;
+      margin-bottom: 20px;
     }
-
-    /* Faq */
-    .faq-section {
-      max-width: 900px;
-      margin: 60px auto;
-    }
-    .faq-item {
-      border-bottom: 1px solid #e2e8f0;
-      padding: 20px 0;
-    }
-    .faq-question {
-      font-size: 1.2rem;
-      font-weight: 700;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-    }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: 0.3s ease;
-      color: #475569;
-    }
-    .faq-item.active .faq-answer { max-height: 220px; padding-top: 12px; }
-
-    /* footer */
-    .footer {
-      background: #0f1a14;
-      color: #cfdfd3;
-      padding: 60px 0 30px;
-      border-radius: 32px 32px 0 0;
-      margin-top: 70px;
-    }
-    .footer-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
-    }
-    .footer-col a {
-      display: block;
-      color: #bdd1c4;
-      text-decoration: none;
+    .feature-card h4 {
+      font-size: 1.3rem;
       margin-bottom: 12px;
-      transition: 0.2s;
     }
-    .footer-col a:hover { color: var(--gold); }
-
-    /* page overlay modal for separate pages */
-    .page-overlay {
-      display: none;
-      position: fixed;
-      top:0; left:0;
-      width:100%; height:100%;
-      background: white;
-      z-index: 2000;
-      overflow-y: auto;
-      padding: 30px 20px;
+    /* Amenities */
+    .amenities-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
     }
-    .close-page {
-      position: sticky;
-      top: 20px;
-      float: right;
-      background: var(--primary);
-      color: white;
-      border: none;
-      padding: 8px 28px;
-      border-radius: 50px;
-      cursor: pointer;
-      font-weight: 600;
+    .amenity-item {
+      background: #f1f5f9;
+      padding: 12px 24px;
+      border-radius: 60px;
+      font-weight: 500;
     }
-    @media (max-width: 800px) {
-      .hero { flex-direction: column; padding: 32px; }
-      .hero-text h1 { font-size: 2.3rem; }
-      .stats-row { flex-direction: column; gap: 20px; border-radius: 40px; }
+    /* floorplan */
+    .floorplan-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .plan-card {
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+      padding: 24px;
+      flex: 1;
+      min-width: 260px;
+      text-align: center;
+      border: 1px solid #eef2f6;
+    }
+    .plan-card h4 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .plan-area {
+      font-size: 1rem;
+      color: #4b5563;
+      margin: 8px 0;
+    }
+    .plan-price {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 16px 0;
+      color: #c7a252;
+    }
+    /* location */
+    .location-info {
+      background: #fefaf5;
+    }
+    .location-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .loc-col {
+      flex: 1;
+    }
+    .loc-list {
+      list-style: none;
+    }
+    .loc-list li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .loc-list i {
+      width: 24px;
+      color: #c7a252;
+    }
+    /* footer */
+    footer {
+      background: #0a1c2f;
+      color: #d1dbe8;
+      padding: 40px 0;
+      text-align: center;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 900px) {
+      .hero-grid {
+        flex-direction: column;
+      }
+      .nav-links {
+        margin-top: 12px;
+      }
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
 <body>
-
-<div class="container">
-  <nav class="navbar">
-    <div class="logo">ELITE<span>RESIDENCES</span></div>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#floorplans">Floor Plans</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#location">Location</a>
-      <a href="#faq">FAQ</a>
-      <a href="#" id="navContact">Contact</a>
-    </div>
-  </nav>
-
-  <div id="home" class="hero">
-    <div class="hero-text">
-      <div class="badge"><i class="fas fa-crown"></i> RERA APPROVED | DEC 2026 HANDOVER</div>
-      <h1>Skyline Flats in Gurgaon<br>Where Elegance Meets Green Living</h1>
-      <p>Golf Course Extension Road | 2, 3 & 4 BHK Luxury Residences | 50+ World-Class Amenities</p>
-      <a href="#floorplans" class="btn-outline-gold"><i class="fas fa-arrow-right"></i> Explore Homes</a>
-    </div>
-    <div class="hero-form">
-      <h3><i class="fas fa-gem"></i> Claim Offer</h3>
-      <p>Get instant e-brochure & price list</p>
-      <form id="web3Form">
-        <div class="form-group"><input type="text" id="name" placeholder="Full Name" required></div>
-        <div class="form-group"><input type="tel" id="phone" placeholder="Phone Number" required></div>
-        <button type="submit" class="btn-primary" style="width:100%"><i class="fas fa-paper-plane"></i> Schedule Site Visit</button>
-        <div id="formStatus" class="form-status" style="font-size:0.8rem; margin-top:12px;"></div>
-      </form>
-      <p style="font-size:0.7rem; margin-top:16px;">*Limited inventory | T&C apply</p>
-    </div>
-  </div>
-
-  <!-- stats -->
-  <div class="stats-row">
-    <div class="stat-item"><div class="stat-number">8.5 Acres</div><div class="stat-label">Lush Greens</div></div>
-    <div class="stat-item"><div class="stat-number">70%</div><div class="stat-label">Open Spaces</div></div>
-    <div class="stat-item"><div class="stat-number">3 min</div><div class="stat-label">Rapid Metro</div></div>
-    <div class="stat-item"><div class="stat-number">700+</div><div class="stat-label">Happy Families</div></div>
-  </div>
-
-  <!-- floor plans -->
-  <div id="floorplans">
-    <h2 class="section-title">Curated Living Spaces</h2>
-    <div class="section-sub">Vastu compliant, expansive balconies, smart home ready.</div>
-    <div class="floor-grid">
-      <div class="floor-card"><div class="floor-img"><i class="fas fa-home"></i> 2 BHK</div><div class="floor-details"><h3>2 BHK Luxe</h3><p>Area: 1280 sq.ft. | 2 bath + study</p><div class="price">₹ 1.69 Cr*</div><p>Premium floor finishes</p></div></div>
-      <div class="floor-card"><div class="floor-img"><i class="fas fa-building"></i> 3 BHK</div><div class="floor-details"><h3>3 BHK Grand</h3><p>Area: 1720 sq.ft. | 3 bath + utility</p><div class="price">₹ 2.49 Cr*</div><p>Corner units available</p></div></div>
-      <div class="floor-card"><div class="floor-img"><i class="fas fa-chart-line"></i> 4 BHK</div><div class="floor-details"><h3>4 BHK Penthouse</h3><p>Area: 2550 sq.ft. | Private terrace</p><div class="price">₹ 3.95 Cr*</div><p>Panoramic city views</p></div></div>
-    </div>
-  </div>
-
-  <!-- description + amenities grid -->
-  <div id="amenities" class="description-section">
-    <div class="container">
-      <h2 class="section-title">World-Class Amenities</h2>
-      <div class="section-sub">Resort-style living within Gurgaon's most coveted address</div>
-      <div class="amenities-grid">
-        <div class="amenity-card"><i class="fas fa-swimming-pool"></i><h4>Infinity Pool</h4><p>Temperature controlled</p></div>
-        <div class="amenity-card"><i class="fas fa-dumbbell"></i><h4>State-of-art Gym</h4><p>Yoga & spa</p></div>
-        <div class="amenity-card"><i class="fas fa-tree"></i><h4>Central Park</h4><p>Jogging track</p></div>
-        <div class="amenity-card"><i class="fas fa-child"></i><h4>Kids Play Zone</h4><p>Fun & safe</p></div>
-        <div class="amenity-card"><i class="fas fa-club"></i><h4>Clubhouse</h4><p>20,000 sq.ft.</p></div>
-        <div class="amenity-card"><i class="fas fa-shield-alt"></i><h4>24x7 Security</h4><p>Smart CCTV</p></div>
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="container nav-flex">
+      <div class="logo">
+        <h2>Sobha <span>Crescent</span></h2>
       </div>
-      <div style="margin-top: 48px; display: flex; justify-content: center;">
-        <div style="max-width: 700px; background: white; border-radius: 48px; padding: 28px; text-align: center;">
-          <i class="fas fa-quote-left" style="color: var(--gold); font-size: 2rem;"></i>
-          <p style="font-size:1.1rem; margin: 12px 0;">“Designed for modern families, with unmatched connectivity to Cyber City, schools & hospitals. Live at the heart of Gurgaon's growth corridor.”</p>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#floorplans">Floor Plans</a>
+        <a href="#location">Location</a>
+        <a href="#contact-form">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section with integrated form (Name, Phone) using Web3Forms -->
+  <div class="hero" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">New Launch · HARERA Registered</div>
+        <h1>Sobha Crescent<br>Sector 63A, Golf Course Extension Road</h1>
+        <p class="hero-desc">3 & 4 BHK Ultra-Luxury Residences | Iconic G+42 Floors | Aravalli Views</p>
+        <div class="price-tag">Starting ₹5.70 Cr* <span style="font-size:1rem;">| WEF 20th April ₹24,499/-</span></div>
+        <div class="hero-stats">
+          <div class="stat">🏢 12 Acres</div>
+          <div class="stat">✨ 100% Corner Units</div>
+          <div class="stat">🌿 70-80% Open Green</div>
+          <div class="stat">🏊 50m Lap Pool</div>
+        </div>
+      </div>
+      <div class="hero-form" id="contact-form">
+        <h3>Get in Touch</h3>
+        <p>Our sales expert will contact you shortly</p>
+        <!-- Web3Forms integration: action points to web3forms.com, replace with your access key -->
+        <form action="https://api.web3forms.com/submit" method="POST" id="web3form">
+          <!-- Replace YOUR_ACCESS_KEY_HERE with your actual Web3Forms access key -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New Inquiry - Sobha Crescent Landing Page">
+          <input type="hidden" name="from_name" value="Sobha Crescent Website">
+          <!-- redirect optional, we'll show inline thank you message -->
+          <input type="hidden" name="redirect" value="false">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Full Name *" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone Number *" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email (Optional)">
+          </div>
+          <button type="submit" class="submit-btn">Request Callback <i class="fas fa-arrow-right"></i></button>
+          <div class="web3-note">We respect your privacy. No spam.</div>
+          <div id="form-status" style="margin-top: 12px; font-size:0.85rem; text-align:center;"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Highlights -->
+  <section>
+    <div class="container">
+      <div class="section-title">The Geometry of Seamlessness</div>
+      <div class="section-sub">Ultra low-density planning · Maximum 4 apartments per floor · Every home a corner unit</div>
+      <div class="features-grid">
+        <div class="feature-card"><i class="fas fa-building"></i><h4>12 Acres Luxury Enclave</h4><p>Sprawling development with 70-80% open greens</p></div>
+        <div class="feature-card"><i class="fas fa-wind"></i><h4>Corner Units</h4><p>Cross ventilation & abundant natural light</p></div>
+        <div class="feature-card"><i class="fas fa-mountain"></i><h4>Aravalli Views</h4><p>Panoramic vistas of the valley & city skyline</p></div>
+        <div class="feature-card"><i class="fas fa-door-open"></i><h4>Private Lift Lobbies</h4><p>Premium access corridors, double-height entrance</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- World-Class Amenities -->
+  <section id="amenities" style="background:#f9fafc;">
+    <div class="container">
+      <div class="section-title">Every Comfort, Curated</div>
+      <div class="section-sub">Over 1 lakh sq. ft. clubhouse + curated lifestyle amenities</div>
+      <div class="amenities-list">
+        <span class="amenity-item">🏊 50m Lap Pool</span>
+        <span class="amenity-item">🧘 Yoga Lawn</span>
+        <span class="amenity-item">🌿 430m Nature Trail</span>
+        <span class="amenity-item">🎉 Party Plaza & BBQ Deck</span>
+        <span class="amenity-item">🐾 Pet Park</span>
+        <span class="amenity-item">⛸️ Skating Rink</span>
+        <span class="amenity-item">💧 Bio Pond & Water Features</span>
+        <span class="amenity-item">🏋️ Outdoor Fitness Deck</span>
+        <span class="amenity-item">🏸 Sports Zone (4+ acres)</span>
+        <span class="amenity-item">🧸 Dedicated Kids Play Area</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Plans Section -->
+  <section id="floorplans">
+    <div class="container">
+      <div class="section-title">Design Your Space</div>
+      <div class="section-sub">Spacious 3 & 4 BHK residences • Every unit a corner masterpiece</div>
+      <div class="floorplan-grid">
+        <div class="plan-card">
+          <h4>3 BHK Grande</h4>
+          <div class="plan-area">2,277 – 2,634 sq. ft.</div>
+          <div class="plan-price">Starting ₹5.45 Cr*</div>
+          <p>Corner residence, cross ventilation, luxury finishes</p>
+        </div>
+        <div class="plan-card">
+          <h4>4 BHK Grande</h4>
+          <div class="plan-area">2,669 sq. ft.</div>
+          <div class="plan-price">Price on Request</div>
+          <p>Expansive living, premium fixtures, panoramic view</p>
+        </div>
+        <div class="plan-card">
+          <h4>4 BHK + Utility</h4>
+          <div class="plan-area">2,966 sq. ft.</div>
+          <div class="plan-price">On Request</div>
+          <p>Ultra-spacious, utility room, Aravalli facing</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- location highlight with extra information -->
-  <div id="location" class="location-highlight">
-    <div style="flex:1"><i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--gold);"></i><h3 style="margin:12px 0">Gurgaon's Most Sought-after Micro Market</h3><p>3 mins from Southern Peripheral Road, 5 mins from Golf Course Extn, proposed metro station at walking distance. Surrounded by Fortune 500 offices, international schools, and top medical facilities.</p><div style="display: flex; gap: 20px; margin-top: 20px;"><span><i class="fas fa-school"></i> DPS, Shri Ram</span><span><i class="fas fa-hospital"></i> Medanta, Artemis</span></div></div>
-    <div style="flex:1; text-align: center;"><i class="fas fa-route" style="font-size: 3rem;"></i><p><strong>IGI Airport:</strong> 20 min drive</p><p><strong>Cyber City:</strong> 12 minutes</p><p><strong>Rapid Metro:</strong> 400m</p></div>
-  </div>
-
-  <!-- Faq - flats gurgaon specific extended -->
-  <div id="faq" class="faq-section">
-    <h2 class="section-title">Smart Answers <span style="color: var(--gold);">for Smart Buyers</span></h2>
-    <div class="faq-list">
-      <div class="faq-item"><div class="faq-question">What is the possession timeline? <span>+</span></div><div class="faq-answer">Project is RERA registered with possession by December 2026. Construction is already 60% complete.</div></div>
-      <div class="faq-item"><div class="faq-question">Are there flexible payment plans? <span>+</span></div><div class="faq-answer">Yes, we offer subvention plans, construction-linked plans & home loan assistance from top banks.</div></div>
-      <div class="faq-item"><div class="faq-question">What is the price of 3 BHK in Gurgaon at this property? <span>+</span></div><div class="faq-answer">3 BHK starts from ₹2.49 Cr all inclusive (taxes, club membership, car parking).</div></div>
-      <div class="faq-item"><div class="faq-question">Is the project Vaastu compliant? <span>+</span></div><div class="faq-answer">Every flat follows Vaastu principles with north/east facing options and abundant natural light.</div></div>
-      <div class="faq-item"><div class="faq-question">What are nearby social infrastructures? <span>+</span></div><div class="faq-answer">Top schools (DPS, Scottish High), hospitals (Artemis, Cloudnine), malls (Ambience, Ardee) within 3–5 km.</div></div>
+  <!-- Location & Connectivity -->
+  <section id="location" class="location-info">
+    <div class="container">
+      <div class="section-title">Strategically Connected</div>
+      <div class="section-sub">Golf Course Extension Road · Seamless access to business hubs & expressways</div>
+      <div class="location-grid">
+        <div class="loc-col">
+          <h3><i class="fas fa-road text-gold"></i> Road & Metro</h3>
+          <ul class="loc-list">
+            <li><i class="fas fa-subway"></i> Sector 55-56 Rapid Metro: 15-20 min</li>
+            <li><i class="fas fa-train"></i> Huda City Centre: 20-25 min</li>
+            <li><i class="fas fa-highway"></i> Dwarka Expressway: 20 min</li>
+            <li><i class="fas fa-plane"></i> IGI Airport: 30-35 min</li>
+          </ul>
+        </div>
+        <div class="loc-col">
+          <h3><i class="fas fa-briefcase"></i> Corporate Hubs</h3>
+          <ul class="loc-list">
+            <li><i class="fas fa-building"></i> International Tech Park: 2 min</li>
+            <li><i class="fas fa-building"></i> TATA Intellion: 4 min</li>
+            <li><i class="fas fa-chart-line"></i> Cyber City: 25-30 min</li>
+          </ul>
+        </div>
+        <div class="loc-col">
+          <h3><i class="fas fa-school"></i> Schools & Healthcare</h3>
+          <ul class="loc-list">
+            <li><i class="fas fa-school"></i> DPS International: 20 min</li>
+            <li><i class="fas fa-hospital"></i> Fortis / Artemis: 20 min</li>
+            <li><i class="fas fa-heartbeat"></i> Medanta: 30 min</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col"><h4><i class="fas fa-building"></i> Elite Residences</h4><p>Sector 62, Golf Course Extn Road, Gurgaon - 122002</p><p>📞 +91 124 489 1010</p><p>✉️ hello@eliteresidences.in</p></div>
-      <div class="footer-col"><h4>Explore</h4><a href="#floorplans">Floor Plans</a><a href="#amenities">Amenities</a><a href="#location">Location</a><a href="#faq">FAQ</a></div>
-      <div class="footer-col"><h4>Legal</h4><a href="#" id="privacyLink">Privacy Policy</a><a href="#" id="termsLink">Terms of Service</a><a href="#" id="aboutLink">About Us</a><a href="#" id="contactFooterLink">Contact</a></div>
-      <div class="footer-col"><h4>Connect</h4><a href="#"><i class="fab fa-instagram"></i> Instagram</a><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="#">Download Brochure</a></div>
+  <!-- Developer & Gallery preview -->
+  <section>
+    <div class="container">
+      <div class="section-title">Built by Legacy — Sobha Group</div>
+      <div class="section-sub">Decades of precision, trust, and design excellence. Delivered luxury redefined.</div>
+      <div style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap; margin-top:20px;">
+        <i class="fas fa-trophy" style="font-size: 2.5rem; color:#c7a252;"></i>
+        <i class="fas fa-hard-hat" style="font-size: 2.5rem; color:#c7a252;"></i>
+        <i class="fas fa-leaf" style="font-size: 2.5rem; color:#c7a252;"></i>
+      </div>
+      <p style="text-align:center; max-width:800px; margin:24px auto 0; color:#4b5563;">SOBHA Crescent: ultra-luxury residences with iconic high-rise towers, low-density planning, and unmatched quality. RERA registered: RC/REP/HARERA/GGM/1054/786/2026/26</p>
     </div>
-    <div class="copyright" style="margin-top: 48px; text-align: center; border-top: 1px solid #2a3a30; padding-top: 28px;">© 2026 Elite Residences Gurgaon | RERA No. GGM/536/2025 | All rights reserved.</div>
-  </div>
-</footer>
+  </section>
 
-<!-- modal for separate page content (privacy, terms, about, contact) -->
-<div id="pageModal" class="page-overlay">
-  <button class="close-page" id="closeModalBtn">✕ Close</button>
-  <div id="modalPageContent" style="max-width: 900px; margin: 60px auto; background: #fff; border-radius: 32px; padding: 40px;"></div>
-</div>
+  <!-- FAQ / Get in touch again (duplicate form with same Web3Forms) optional -->
+  <section style="background:#f2f6fc;">
+    <div class="container" style="max-width:700px;">
+      <div class="section-title">Ready to Explore?</div>
+      <div class="section-sub">Fill your details – our luxury consultant will reach out within 24 hours</div>
+      <div style="background:white; border-radius:32px; padding:32px; box-shadow:0 20px 35px rgba(0,0,0,0.05);">
+        <form action="https://api.web3forms.com/submit" method="POST" id="web3formFooter">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="Footer Inquiry - Sobha Crescent">
+          <input type="hidden" name="redirect" value="false">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Full Name *" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone Number *" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email (Optional)">
+          </div>
+          <button type="submit" class="submit-btn">Schedule a Site Visit</button>
+          <div id="footer-form-status" style="text-align:center; margin-top:12px; font-size:0.85rem;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
 
-<script>
-  // Web3Forms integration (enhanced)
-  const formEl = document.getElementById('web3Form');
-  const statusDiv = document.getElementById('formStatus');
-  formEl.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    if (!name || !phone) { statusDiv.innerHTML = '⚠️ Name and phone required'; statusDiv.style.color = '#b91c1c'; return; }
-    statusDiv.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
-    // Using web3forms demo key (for production replace with your access key)
-    const accessKey = '6f3c2a1b-8e4d-4f2c-9a7b-123e4567d890';
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ access_key: accessKey, name, phone, subject: 'Gurgaon Flats Inquiry', botcheck: '' })
-      });
-      const data = await res.json();
-      if (data.success) { statusDiv.innerHTML = '✅ Thank you! Our expert will call you shortly.'; statusDiv.style.color = '#15803d'; formEl.reset(); }
-      else { statusDiv.innerHTML = '❌ Submission error, please try again.'; statusDiv.style.color = '#b91c1c'; }
-    } catch (err) { statusDiv.innerHTML = '⚠️ Network issue. Call us directly.'; statusDiv.style.color = '#b91c1c'; }
-  });
+  <footer>
+    <div class="container">
+      <p><strong>Sobha Crescent</strong> | Sector 63A, Golf Course Extension Road, Gurugram</p>
+      <p style="margin:10px 0;">Manoj Babu HARERA No. RC/HARERA/GGM/1570/1165/2021/172 | RERA: RC/REP/HARERA/GGM/1054/786/2026/26</p>
+      <p class="footer-note">*Prices are subject to change. T&C applied. This is an informational landing page inspired by Sobha Crescent. For exact details and availability, connect with sales team.</p>
+      <p class="footer-note">© 2026 Sobha Crescent – Luxury Redefined</p>
+    </div>
+  </footer>
 
-  // FAQ Toggle logic
-  const faqs = document.querySelectorAll('.faq-item');
-  faqs.forEach(item => {
-    const q = item.querySelector('.faq-question');
-    q.addEventListener('click', () => {
-      const open = item.classList.contains('active');
-      faqs.forEach(i => i.classList.remove('active'));
-      if (!open) item.classList.add('active');
-    });
-  });
-  if (faqs.length) faqs[0].classList.add('active');
-
-  // Separate Pages content (Privacy, Terms, About, Contact)
-  const pageData = {
-    privacy: `<h1>Privacy Policy</h1><p>Last Updated: 2026</p><p>Elite Residences respects your privacy. Any personal information (name, phone) collected via forms is used solely for property inquiries and never shared with third parties without consent. You may request data deletion at any time.</p><h3>Data Security</h3><p>We implement industry-standard encryption to protect your data.</p><p>For queries: privacy@eliteresidences.in</p>`,
-    terms: `<h1>Terms of Service</h1><p>By using this website, you agree to our terms. All information regarding projects, pricing, and availability is subject to change as per RERA guidelines. The content does not constitute an offer or contract.</p><h3>Limitation of Liability</h3><p>Elite Residences is not liable for any indirect damages arising from use of this site.</p>`,
-    about: `<h1>About Elite Residences</h1><p>Founded in 2012, Elite Residences has delivered over 2000 homes in Gurgaon with a reputation for quality and on-time delivery. Our flagship project "The Terraces" defines luxury flats in Gurgaon with modern architecture and sustainable living.</p><p>Awarded 'Developer of the Year 2025' by Realty Plus.</p>`,
-    contact: `<h1>Contact Us</h1><p><i class="fas fa-phone-alt"></i> +91 124 489 1010<br><i class="fas fa-envelope"></i> hello@eliteresidences.in<br><i class="fas fa-map-pin"></i> Experience Centre: Tower B, Global Business Park, Golf Course Rd, Gurgaon</p><p>Mon-Sat: 10 AM to 7 PM | Sunday by Appointment</p><iframe width="100%" height="280" style="border-radius: 24px; border:0;" src="https://maps.google.com/maps?q=Golf+Course+Extension+Road+Gurgaon&output=embed"></iframe>`
-  };
-  const modal = document.getElementById('pageModal');
-  const modalContent = document.getElementById('modalPageContent');
-  const closeModal = document.getElementById('closeModalBtn');
-  function showPage(pageId) {
-    if (pageData[pageId]) {
-      modalContent.innerHTML = pageData[pageId];
-      modal.style.display = 'block';
-      document.body.style.overflow = 'hidden';
-    }
-  }
-  closeModal.onclick = () => { modal.style.display = 'none'; document.body.style.overflow = 'auto'; };
-  // Attach events
-  document.getElementById('privacyLink')?.addEventListener('click', (e) => { e.preventDefault(); showPage('privacy'); });
-  document.getElementById('termsLink')?.addEventListener('click', (e) => { e.preventDefault(); showPage('terms'); });
-  document.getElementById('aboutLink')?.addEventListener('click', (e) => { e.preventDefault(); showPage('about'); });
-  document.getElementById('contactFooterLink')?.addEventListener('click', (e) => { e.preventDefault(); showPage('contact'); });
-  document.getElementById('navContact')?.addEventListener('click', (e) => { e.preventDefault(); showPage('contact'); });
-  // also any other contact 
-  const footerContact = document.querySelector('#contactFooterLink');
-  if(footerContact) footerContact.addEventListener('click', (e) => { e.preventDefault(); showPage('contact'); });
-  // smooth scroll for all anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const hash = this.getAttribute('href');
-      if (hash && hash !== "#" && document.querySelector(hash)) {
+  <script>
+    // Web3Forms handling for both forms (show success/error messages without page redirect)
+    function handleFormSubmit(formElement, statusElementId) {
+      formElement.addEventListener('submit', async function(e) {
         e.preventDefault();
-        document.querySelector(hash).scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-</script>
+        const form = e.target;
+        const statusDiv = document.getElementById(statusElementId);
+        statusDiv.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
+        statusDiv.style.color = '#c7a252';
+        const formData = new FormData(form);
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+          const result = await response.json();
+          if (result.success) {
+            statusDiv.innerHTML = '✅ Thank you! Our expert will contact you shortly.';
+            statusDiv.style.color = '#2b7a4b';
+            form.reset();
+            setTimeout(() => { statusDiv.innerHTML = ''; }, 5000);
+          } else {
+            statusDiv.innerHTML = '❌ Something went wrong. Please try again or call us directly.';
+            statusDiv.style.color = '#b91c1c';
+          }
+        } catch (error) {
+          statusDiv.innerHTML = '❌ Network error. Please check your connection.';
+          statusDiv.style.color = '#b91c1c';
+        }
+      });
+    }
+
+    // initialise both forms if exist
+    const mainForm = document.getElementById('web3form');
+    const footerForm = document.getElementById('web3formFooter');
+    if (mainForm) handleFormSubmit(mainForm, 'form-status');
+    if (footerForm) handleFormSubmit(footerForm, 'footer-form-status');
+  </script>
+  <!-- IMPORTANT: Replace both instances of YOUR_ACCESS_KEY_HERE with your actual Web3Forms access key from https://web3forms.com -->
 </body>
 </html>
